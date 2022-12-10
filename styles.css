@@ -1,4 +1,4 @@
-<!--body {background-color: #ffcb4b;
+body {background-color: #ffcb4b;
     margin: 0;
     text-align:center;
     font-family: 'Merriweather', serif;
@@ -48,4 +48,9 @@ h2 {font-family: 'Montserrat', sans-serif;}
   background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
+}
+
+#outputCanvas{
+
+  background-image: url(pexels-tima-miroshnichenko-6612173.jpg);
 }
