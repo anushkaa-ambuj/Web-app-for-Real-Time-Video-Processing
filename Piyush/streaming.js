@@ -4,9 +4,8 @@ let video = document.getElementById("myVidPlayer")
 let canvas = document.getElementById("outputCanvas")
 let canvasContext = canvas.getContext('2d');
 
-let videoBg = document.createElement("video")
-videoBg.src ="pexels-rodnae-productions-8474604.mp4";
 
+// console.log(videoBg)
 
 // console.log('Till now')
 
@@ -29,11 +28,11 @@ video.addEventListener('loadeddata',()=>{
     setInterval(() => {
     // here video is coming as a single frame
     canvasContext.drawImage(video, 0, 0, videoXPixels,videoYPixels);
-    canvasContext.drawImage(videoBg,0,0,videoBg.videoWidth, videoBg.videoHeight);
+    // canvastempContext.drawImage(videoBg,0,0,videoXPixels, videoYPixels);
 
     // console.log('Yep it is working')
     const videoFrameData = canvasContext.getImageData(0,0, canvas.width, canvas.height);
-    const BgFrameData = canvasContext.getImageData(0,0,videoBg.videoWidth, videoBg.videoHeight);
+    // const BgFrameData = canvastempContext.getImageData(0,0,videoXPixels, videoYPixels);
 
     // console.log(videoFrameData) --> it is an object
     // to access the image pixel data
@@ -44,15 +43,12 @@ video.addEventListener('loadeddata',()=>{
         let r  = videoFrameData.data[interval+0]
         let g  = videoFrameData.data[interval+1]
         let b  = videoFrameData.data[interval+2]
-        let o  = videoFrameData.data[interval+3]
+        // let o  = videoFrameData.data[interval+3]
         // console.log(r,g,b,o)
         // condition to detect green background
         if (g>117) {
             if (g>b && g>r) {
-                //videoFrameData.data[interval+3] = 0
-                videoFrameData.data[interval+1] = BgFrameData.data[interval+1]
-                videoFrameData.data[interval+2] = BgFrameData.data[interval+2]
-                videoFrameData.data[interval+3] = BgFrameData.data[interval+3]
+                videoFrameData.data[interval+3] = 0
                 // console.log('is this block Working')
             }
         }
