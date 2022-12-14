@@ -59,12 +59,12 @@ video.addEventListener('loadeddata',()=>{
         // let o  = videoFrameData.data[interval+3]
         // console.log(r,g,b,o)
         // condition to detect green background
-        // if (g>127) {
-        //     if (g>b && g>r) {
+        if (g>127) {
+            if (g>b && g>r) {
                 videoFrameData.data[interval+3] = 0;
                 // console.log('is this block Working')
-        //     }
-        // }
+            }
+        }
         // console.log('checking the Processing');
     }
     canvasContext.putImageData(videoFrameData, 0,0);
