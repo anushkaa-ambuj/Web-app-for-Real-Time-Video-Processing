@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcam Stream</title>
+</head>
+
+<style>
+    #container{
+        margin: 0px auto;
+        width: 641px;
+        height: 481px;
+        border: 10px #333 solid;
+    }
+    #videoElement{
+        width: 500px;
+        height: 375px;
+        background-color: #666;
+    }
+</style>
+
+<body>
+    <div id="container">
+        <video autoplay="true" id="videoelement">
+
+        </video>
+    </div>
+
+    <script>
+        let video = document.querySelector("#videoelement");
+        if (navigator.mediaDevices.getUserMedia){
+            navigator.mediaDevices.getUserMedia({video: true})
+                .then(function(stream){
+                    video.srcObject = stream;
+                })
+                .catch(function(error){
+                    console.log("Something went wrong!")
+                })
+        } else{
+            console.log("Not Supported")
+        }
+    </script>
+</body>
+</html>

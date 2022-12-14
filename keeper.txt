@@ -1,6 +1,0 @@
-<div class="actual_vid_cntnr">
-    <video id="myVidPlayer" autoplay muted controls></video>
-</div>
-<div class="output_cntnr">
-    <canvas id="outputCanvas"></canvas>
-</div>

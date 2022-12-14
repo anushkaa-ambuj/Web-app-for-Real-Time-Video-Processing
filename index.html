@@ -1,42 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Charm&family=Courgette&family=Noto+Nastaliq+Urdu:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <nav class="idx_nav">
-        <div class="navbs">
-            <button class="lefb leftup">
-                RTVP WebApp
-            </button>
-            <button class="righb">
-                <a href="bg_idx.html" class="anchor_tg">Backgrounds</a>
-            </button>
-            <button class="righb righ">
-                <a href="streaming_idx.html" class="anchor_tg">Get Started</a>
-            </button>
-        </div>
-    </nav>
-    <main>
-        <div class="main_container">
-            
-        </div>
-        <div class="main_bottom">
-            Some Of Our Backgrounds
-        </div>
-        <div class="tiles">
-            <button class="tile t1" onclick="location.href = 'streaming_idx.html'; set_bg(1)"></button> 
-            <button class="tile t2" onclick="location.href = 'streaming_idx.html'; set_bg(2)"></button>
-            <button class="tile t3" onclick="location.href = 'streaming_idx.html'; set_bg(3)"></button>
-            <button class="tile t4" onclick="location.href = 'streaming_idx.html'; set_bg(4)"></button>
-            <button class="tile t5" onclick="location.href = 'bg_idx.html'; "></button>
-        </div>
-        <script src="/scripts/strm.js"></script>
-    </main>
-</body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Real-Time-Video-processor</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.ico">
+  </head>
+  <body>
+    <h2>Live Stream</h2>
+    <div id="container">
+	<!-- <video autoplay="true" id="videoElement">
+	</video> -->
+  <video id="myVidPlayer" autoplay muted controls></video>
+  <div class="forBg">
+  <video src="pexels-marina-leonova-9466000.mp4" autoplay loop muted id="bgplayer"></video>
+  </div>
+  <canvas id="outputCanvas"></canvas>
+</div>
+<button type="button" class="btn btn-primary">Start stream</button>
+<button type="button" class="btn btn-outline-danger">Stop Stream</button>
+<!-- <script src="/index.js"></script> -->
+<script src="/Piyush/streaming.js"></script>
+  </body>
 </html>
