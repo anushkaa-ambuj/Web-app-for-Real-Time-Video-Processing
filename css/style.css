@@ -1,6 +1,9 @@
 body{
     margin: 0px;
 }
+#particles-js{
+    height: 100vh;
+}
 .idx_nav{
     background-image: linear-gradient(to bottom,white,white,rgb(233, 233, 233));
     height: 40px;
@@ -36,6 +39,9 @@ nav button{
     color: white;
     height: 35px;
 }
+nav button a:hover{
+    color: rgb(137, 91, 255);
+}
 .navbs{
     display: inline-flexbox;
     position: relative;
@@ -60,8 +66,7 @@ nav button{
 .main_container{
     background-image: linear-gradient(to bottom right,rgb(209,209,255),rgb(227,238,255),rgb(198,186,247));
     height: 400px;
-    display: flex;
-    color: aliceblue;
+    overflow-y: hidden;
 }
 .main_bottom{
     background-image: linear-gradient(to top,white,white,white,rgb(241, 241, 241));
