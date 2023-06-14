@@ -99,10 +99,10 @@ nav button a:hover{
     transform: translateY(-10px);
 }
 .t1{
-    background-image: url("/Imgs/background_1.webp");
+    background-image: url("/Imgs/background_6.webp");
 }
 .t2{
-    background-image: url("/Imgs/background_2.png");
+    background-image: url("/Imgs/background_2.jpg");
 }
 .t3{
     background-image: url("/Imgs/background_3.png");
@@ -144,10 +144,10 @@ nav button a:hover{
     transition: 0.8s;
 }
 .tiles_bgi1{
-    background-image: url(/Imgs/background_1.webp);
+    background-image: url(/Imgs/background_1.png);
 }
 .tiles_bgi2{
-    background-image: url(/Imgs/background_2.png);
+    background-image: url(/Imgs/background_2.jpg);
 }
 .tiles_bgi3{
     background-image: url(/Imgs/background_3.png);
@@ -442,10 +442,10 @@ nav button a:hover{
     content-visibility: hidden;
 }
 .first_1{
-    background-image: url(/Imgs/background_1.webp);
+    background-image: url(/Imgs/background_1.png);
 }
 .second_2{
-    background-image: url(/Imgs/background_2.png);
+    background-image: url(/Imgs/background_2.jpg);
 }
 .third_3{
     background-image: url(/Imgs/background_3.png);
