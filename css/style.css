@@ -102,16 +102,16 @@ nav button a:hover{
     background-image: url(../Imgs/background_6.webp);
 }
 .t2{
-    background-image: url(./../Imgs/background_2.jpg);
+    background-image: url(../Imgs/background_2.jpg);
 }
 .t3{
-    background-image: url(./../Imgs/background_3.png);
+    background-image: url(../Imgs/background_3.png);
 }
 .t4{
-    background-image: url(./../Imgs/background_4.jpg);
+    background-image: url(../Imgs/background_4.jpg);
 }
 .t5{
-    background-image: url(./../Imgs/moretxt.jpeg);
+    background-image: url(../Imgs/moretxt.jpeg);
     background-size: 105% 100%;
     opacity: 0.7;
 }
@@ -144,22 +144,22 @@ nav button a:hover{
     transition: 0.8s;
 }
 .tiles_bgi1{
-    background-image: url(./../Imgs/background_1.png);
+    background-image: url(../Imgs/background_1.png);
 }
 .tiles_bgi2{
-    background-image: url(./../Imgs/background_2.jpg);
+    background-image: url(../Imgs/background_2.jpg);
 }
 .tiles_bgi3{
-    background-image: url(./../Imgs/background_3.png);
+    background-image: url(../Imgs/background_3.png);
 }
 .tiles_bgi4{
-    background-image: url(./../Imgs/background_4.jpg);
+    background-image: url(../Imgs/background_4.jpg);
 }
 .tiles_bgi5{
-    background-image: url(./../Imgs/background_5.jpg);
+    background-image: url(../Imgs/background_5.jpg);
 }
 .tiles_bgi6{
-    background-image: url(./../Imgs/background_6.webp);
+    background-image: url(../Imgs/background_6.webp);
 }
 .tbg:hover{
     filter: contrast(120%) opacity(0.9);
@@ -442,22 +442,22 @@ nav button a:hover{
     content-visibility: hidden;
 }
 .first_1{
-    background-image: url(./../Imgs/background_1.png);
+    background-image: url(../Imgs/background_1.png);
 }
 .second_2{
-    background-image: url(./../Imgs/background_2.jpg);
+    background-image: url(../Imgs/background_2.jpg);
 }
 .third_3{
-    background-image: url(./..//Imgs/background_3.png);
+    background-image: url(../Imgs/background_3.png);
 }
 .fourth_4{
-    background-image: url(./../Imgs/background_4.jpg);
+    background-image: url(../Imgs/background_4.jpg);
 }
 .fifth_5{
-    background-image:url(./../Imgs/background_5.jpg);
+    background-image:url(../Imgs/background_5.jpg);
 }
 .sixth_6{
-    background-image:url(./../Imgs/background_6.webp);
+    background-image:url(../Imgs/background_6.webp);
 }
 @media screen and (max-width: 1300px) and (min-width: 875px) {
     .oobtn{
