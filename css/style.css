@@ -99,19 +99,19 @@ nav button a:hover{
     transform: translateY(-10px);
 }
 .t1{
-    background-image: url("./Imgs/background_6.webp");
+    background-image: url(../Imgs/background_6.webp);
 }
 .t2{
-    background-image: url("./Imgs/background_2.jpg");
+    background-image: url(./../Imgs/background_2.jpg);
 }
 .t3{
-    background-image: url("./Imgs/background_3.png");
+    background-image: url(./../Imgs/background_3.png);
 }
 .t4{
-    background-image: url("./Imgs/background_4.jpg");
+    background-image: url(./../Imgs/background_4.jpg);
 }
 .t5{
-    background-image: url("./Imgs/moretxt.jpeg");
+    background-image: url(./../Imgs/moretxt.jpeg);
     background-size: 105% 100%;
     opacity: 0.7;
 }
